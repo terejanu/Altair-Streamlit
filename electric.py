@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 @st.cache
 def load_data():
-    df = pd.read_csv('daily_electricity.csv', index_col='Date')
+    df = pd.read_csv('https://raw.githubusercontent.com/terejanu/Altair-Streamlit/main/daily_electricity.csv', index_col='Date')
     return df
 
 st.title('Electricity Production by Source')
